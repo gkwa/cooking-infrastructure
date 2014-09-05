@@ -1,7 +1,7 @@
-FROM ubuntu:14.04
+FROM ubuntu:14.04.1
 MAINTAINER Taylor taylormonacelli@gmail.com
 RUN apt-get -qq update
-RUN apt-get install -y git-core emacs bundler
+RUN apt-get install -y git emacs bundler
 RUN cd ~
 RUN git init
 RUN git remote add origin https://github.com/TaylorMonacelli/dotfiles.git
