@@ -7,8 +7,14 @@ RUN git init
 RUN git remote add origin https://github.com/TaylorMonacelli/dotfiles.git
 RUN git fetch
 RUN git checkout -ft origin/master||:
-WORKDIR /
 RUN git clone https://github.com/TaylorMonacelli/cooking-infrastructure.git
 WORKDIR /cooking-infrastructure
 RUN git checkout master
 RUN sudo bundle
+WORKDIR /
+RUN git clone https://github.com/TaylorMonacelli/emacs_batch_mode_practice.git
+WORKDIR /emacs_batch_mode_practice/automated-testing-packages
+RUN make test6
+RUN make test6
+RUN make test6
+RUN make test6
