@@ -1,4 +1,4 @@
-FROM ubuntu:14.04.1
+FROM ubuntu:14.04.5
 MAINTAINER Taylor taylormonacelli@gmail.com
 RUN apt-get -qq update
 RUN apt-get install -y git emacs bundler
