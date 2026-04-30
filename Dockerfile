@@ -1,4 +1,4 @@
-FROM ubuntu:24.04
+FROM ubuntu:26.04
 MAINTAINER Taylor taylormonacelli@gmail.com
 RUN apt-get -qq update
 RUN apt-get install -y git emacs bundler
